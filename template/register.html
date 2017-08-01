@@ -1,0 +1,55 @@
+<div ng-controller="register" class="pages">
+	<div data-page="register" class="page theme-white layout-dark login-page">
+		<div class="page-content bg-home">
+			<!--<div class="overlay"></div>-->
+			<div class="close"><a onclick="window.history.back();" class="back" data-force="true"><img src="img/back.png" alt="close"></a></div>
+			<div class="content-block">
+				<div class="text-center text-large">Sign Up</div>
+				<div class="list-block inputs-list">
+					<ul>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label"></div>
+									<div class="item-input item-input-field">
+                                                                            <input ng-model="username" class="" placeholder="Full Name" type="text">
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label"></div>
+									<div class="item-input item-input-field">
+                                                                            <input ng-model="email" class="" placeholder="E-mail" type="email">
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label"></div>
+									<div class="item-input item-input-field">
+                                                                            <input ng-model="password" class="" placeholder="Password" type="password">
+									</div>
+								</div>
+							</div>
+						</li>
+						
+					</ul>
+				</div>
+                                <p ng-click="register(username,email,password)" class="buttons-row">
+					<a class="no-border-raduis button button-fill color-red">Join us</a>
+				</p>
+				<div class="text-center help-input">Already have an account? <a href="#!login" class="text-underline">Login</a></div>
+			</div>
+			<!-- for loader start -->
+			<md-progress-circular ng-show="loading" md-mode="indeterminate"></md-progress-circular>
+			<!-- for loader stop -->
+		</div>
+	</div>
+</div>

@@ -1,0 +1,45 @@
+<!-- Pages container, because we use fixed navbar and toolbar, it has additional appropriate classes-->
+<div ng-controller="login" class="pages" data-swipe="false">
+	<!-- Page, "data-page" contains page name -->
+	<div data-page="login" class="page theme-white layout-dark login-page">
+		<!-- Scrollable page content -->
+		<div class="page-content bg-home">
+			<!--<div class="overlay"></div>-->
+			<div class="close"><a onclick="window.history.back();" class="back" data-force="true"><img src="img/back.png" alt="close"></a></div>
+			<div class="content-block">
+				<div class="text-center text-large">Login</div>
+				<div class="list-block inputs-list">
+					<ul>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label"></div>
+									<div class="item-input item-input-field">
+                                                                            <input ng-model="username" class="" placeholder="Login" type="text">
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label"></div>
+									<div class="item-input item-input-field">
+                                                                            <input ng-model="password" class="" placeholder="Password" type="password">
+									</div>
+								</div>
+							</div>
+						</li>	
+					</ul>
+				</div>
+                                <p ng-click="login(username,password)" class="buttons-row">
+					<a class="no-border-raduis button button-fill color-red">Login</a>
+				</p>
+				<div class="text-center help-input">Don't have an account? <a href="#!register" class="text-underline">Sign up</a></div>
+			</div>	
+		</div>
+		<!-- for loader start -->
+		<md-progress-circular ng-show="loading" md-mode="indeterminate"></md-progress-circular>
+		<!-- for loader stop -->
+	</div>
+</div>

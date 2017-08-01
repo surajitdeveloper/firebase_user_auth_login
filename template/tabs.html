@@ -1,0 +1,17 @@
+<div ng-controller="tabs" ng-init="get_user_data()" class="pages container">
+<!-- for loader start -->
+		<md-progress-circular ng-show="loading" md-mode="indeterminate"></md-progress-circular>
+		<!-- for loader stop -->
+<div class="row pd10">
+	<div class="col-sm-12">
+		<div class="row">
+			<div class="col-sm-6">
+				Welcome User: {{fullname}}
+			</div>
+			<div class="col-sm-6">
+			<button ng-click="logout()" class="btn btn-main">Logout</button>
+			</div>
+		</div>
+	</div>
+</div>
+</div>

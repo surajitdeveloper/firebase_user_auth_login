@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!--<link rel="apple-touch-icon" href="img/apple-touch-icon.png" />-->
+	<!--<link rel="apple-touch-startup-image" href="img/apple-touch-startup-image-320x460.png" />-->
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="shortcut icon" sizes="196x196" href="img/196x196.png">
+	<link rel="shortcut icon" sizes="128x128" href="img/128x128.png">
+    <!-- Your app title -->
+    <title>AdviceGate</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
+    <!-- Path to Framework7 Library CSS, Material Theme -->
+    <link rel="stylesheet" href="css/framework7.material.min.css">
+    <!-- Path to Framework7 color related styles, Material Theme -->
+    <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="css/framework7-icons.css">
+    
+    <link rel="stylesheet" href="font/flaticon.css">
+    
+    <link rel="stylesheet" href="css/font-awesome.css">
+    
+	<link rel="stylesheet" href="css/swipebox.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/my-app.css">
+</head>
+
+<body class="theme-blue">
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div style="" class="panel panel-left panel-cover">
+		<div data-page="panel-left" class="view navbar-fixed">
+			<div class="pages">
+				<div data-page="panel-left" class="page">
+					<div class="navbar">
+						<div class="navbar-inner">
+							<div class="center">Menu</div>
+						</div>
+					</div>
+					<div class="page-content">
+						<div class="content-block-title">Browse menu</div>
+						<div class="list-block">
+							<ul>
+								<li>
+									<a href="index.html" class="item-link close-panel">
+										<div class="item-content">
+											<div class="item-media"><i class="flaticon-home"></i></div>
+											<div class="item-inner">
+												<div class="item-title text-small">Home</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="tabs.html" class="item-link close-panel">
+										<div class="item-content">
+											<div class="item-media"><i class="flaticon-tabs"></i></div>
+											<div class="item-inner">
+												<div class="item-title text-small">Knowledge</div>
+												<!--<div class="item-after"><span class="badge bg-green">15</span></div>-->
+											</div>
+										</div>
+									</a>
+								</li>
+								
+								<li>
+									<a href="activity.html" class="item-link close-panel">
+										<div class="item-content">
+											<div class="item-media"><i class="flaticon-photo"></i></div>
+											<div class="item-inner">
+												<div class="item-title text-small">Activity</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<!--<li>
+									<a href="videos.html" class="item-link close-panel">
+										<div class="item-content">
+											<div class="item-media"><i class="flaticon-play"></i></div>
+											<div class="item-inner">
+												<div class="item-title text-small">Videos</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="blog.html" class="item-link close-panel">
+										<div class="item-content">
+											<div class="item-media"><i class="flaticon-agenda"></i></div>
+											<div class="item-inner">
+												<div class="item-title text-small">Blog</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="contact.html" class="item-link close-panel">
+										<div class="item-content">
+											<div class="item-media"><i class="flaticon-paper-plane"></i></div>
+											<div class="item-inner">
+												<div class="item-title text-small">Contact</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="user-list.html" class="item-link close-panel">
+										<div class="item-content">
+											<div class="item-media"><i class="flaticon-users"></i></div>
+											<div class="item-inner">
+												<div class="item-title text-small">User list</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="messages.html" class="item-link close-panel">
+										<div class="item-content">
+											<div class="item-media"><i class="flaticon-notification"></i></div>
+											<div class="item-inner">
+												<div class="item-title text-small">Messages</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="tabs.html" class="item-link close-panel">
+										<div class="item-content">
+											<div class="item-media"><i class="flaticon-tabs"></i></div>
+											<div class="item-inner">
+												<div class="item-title text-small">Tabs</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="toggle.html" class="item-link close-panel">
+										<div class="item-content">
+											<div class="item-media"><i class="flaticon-toggle"></i></div>
+											<div class="item-inner">
+												<div class="item-title text-small">Toggle</div>
+											</div>
+										</div>
+									</a>
+								</li>-->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-right panel-cover">
+		<div class="content-block-title text-uppercase text-bold">Recents articles</div>
+        <div class="content-block">
+            <div class="list-block media-list recent-articles">
+			  <ul>
+				<li class="item-content">
+				  <div class="item-media">
+					<img src="img/photos/3.jpg" width="44" alt="img">
+				  </div>
+				  <div class="item-inner">
+					<div class="item-title-row">
+					  <a href="single.html" class="item-title text-small text-bold close-panel">Supere asy Ways To Learn Everything About photographer</a>
+					</div>
+					<p class="item-text">
+						Nam congue metus felis. Sed sit amet dolor at ma
+					</p>
+				  </div>
+				</li>
+				<li class="item-content">
+				  <div class="item-media">
+					<img src="img/photos/7.jpg" width="44" alt="img">
+				  </div>
+				  <div class="item-inner">
+					<div class="item-title-row">
+					  <a href="single.html" class="item-title text-small text-bold close-panel">Can You Really Find designe (on the Web)?</a>
+					</div>
+					<p class="item-text">
+						Nam congue metus felis. Sed sit amet dolor at ma
+					</p>
+				  </div>
+				</li>
+				<li class="item-content">
+				  <div class="item-media">
+					<img src="img/photos/11.jpg" width="44" alt="img">
+				  </div>
+				  <div class="item-inner">
+					<div class="item-title-row">
+					  <a href="single.html" class="item-title text-small text-bold close-panel">What Everyone Must Know About fashion</a>
+					</div>
+					<p class="item-text">
+						Nam congue metus felis. Sed sit amet dolor at ma
+					</p>
+				  </div>
+				</li>
+			  </ul>
+			</div>
+        </div>
+		<div class="content-block-title text-uppercase text-bold">Recents comments</div>
+		<div class="content-block">
+		<div class="list-block media-list user-list">
+			  <ul>
+				<li class="item-content">
+				  <div class="item-media">
+					<img src="img/photos/user-3.png" width="44" alt="avatar">
+				  </div>
+				  <div class="item-inner">
+					<div class="item-title-row">
+					  <div class="item-title text-small text-bold">Jony Doe</div>
+					</div>
+					<p class="item-text">
+						Nam congue metus felis. Sed sit amet dolor at ma
+					</p>
+				  </div>
+				</li>
+				<li class="item-content">
+				  <div class="item-media">
+					<img src="img/photos/user-5.jpg" width="44" alt="avatar">
+				  </div>
+				  <div class="item-inner">
+					<div class="item-title-row">
+					  <div class="item-title text-small text-bold">Jessica Ane</div>
+					</div>
+					<p class="item-text">
+						Nam congue metus felis. Sed sit amet dolor at ma
+					</p>
+				  </div>
+				</li>
+				<li class="item-content">
+				  <div class="item-media">
+					<img src="img/photos/user-6.jpg" width="44" alt="avatar">
+				  </div>
+				  <div class="item-inner">
+					<div class="item-title-row">
+					  <div class="item-title text-small text-bold">Albert alberto</div>
+					</div>
+					<p class="item-text">
+						Nam congue metus felis. Sed sit amet dolor at ma
+					</p>
+				  </div>
+				</li>
+			  </ul>
+		</div>
+		</div>
+    </div>
+
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Pages container, because we use fixed navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content bg-home">
+                        <!--<div class="overlay"></div>-->
+						<div class="content-block text-center">
+							<img class="logo" src="img/logo-get-started@1x.png" alt="AdviceGate">
+							<h1>Your Personal<br/>Business Advisor</h1>
+							<!--<div class="offset-bottom-75"></div>-->
+							<div class="lets-start-form list-block">
+								<ul>
+									<li>
+										<div class="item-input">
+											<input class="" type="text" placeholder="Name">
+										</div>
+									</li>
+									<li>
+										<div class="item-input">
+											<input class="" type="tel" placeholder="Phone">
+										</div>
+									</li>
+									<li>
+										<div class="item-input">
+											<input class="" type="email" placeholder="Email">	
+										</div>
+									</li>
+									<li>
+										<label class="label-checkbox item-content">
+											<!-- Checked by default -->
+											<input type="checkbox" name="my-checkbox" value="Books" checked="checked">
+											<div class="item-media">
+												<i class="icon icon-form-checkbox"></i>
+											</div>
+											<div class="item-inner">
+												<div class="item-title">I agree to the Terms and Conditions</div>
+											</div>
+										</label>
+									</li>
+								</ul>
+							</div>
+							<h2>Get instant Personal Business Advice/Training From Top Consultants</h2>
+							<div class="content-block">
+								<p>
+									<a href="#" class="button button-fill color-green btn-green">Let’s Start</a>
+								</p>
+							</div>
+						</div>
+						<!--<div class="home-footer">
+							<a href="login.html" id="login">Login</a>
+							<a href="register.html" id="signup">Sign up</a>
+						</div>-->
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>    
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+	<script type="text/javascript" src="js/jquery.swipebox.js"></script>
+    <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+    
+    
+</body>
+</html>
